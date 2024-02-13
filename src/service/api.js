@@ -1,7 +1,7 @@
   
 import axios from 'axios';
 
-const url = 'https://rumbling-reliable-mine.glitch.me/';
+const url = 'https://rumbling-reliable-mine.glitch.me';
 
 export const addUser = async (data) => {
     try {

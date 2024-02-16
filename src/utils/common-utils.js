@@ -3,7 +3,10 @@
 export const downloadMedia = async (e, originalImage) => {
     e.preventDefault();
     try {
-        fetch(originalImage)
+         fetch(originalImage, {
+            method: 'GET',
+            mode: 'cors',
+        })
         .then(resp => resp.blob())
         .then(blob => {
             const url = window.URL.createObjectURL(blob);
